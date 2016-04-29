@@ -1,0 +1,29 @@
+
+@mixin link {
+  display: inline-block;
+  min-height: 15px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  padding-left: 30px;
+  margin-bottom: 8px;
+};
+
+@mixin clearfix {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+/********** Media queries ***********/
+
+@mixin mobile {
+  @media (min-width: #{$brk-narrow}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$brk-wide}) {
+    @content;
+  }
+}

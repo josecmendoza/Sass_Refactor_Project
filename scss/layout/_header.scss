@@ -1,0 +1,60 @@
+
+.main-header {
+  @extend %centered;
+}
+
+.name {
+  color: #444444;
+  font-weight: 500;
+  margin: 0;
+  padding: 15px 0;
+
+  @include desktop {
+    float: left;
+  }
+
+}
+
+a:link, a:visited {
+  color: #676767;
+}
+
+/****** NAVIGATION *******/
+
+.main-nav {
+
+  & a:hover {
+    @include mobile {
+      color: #bdbdbd;
+      transition: 0.5s;
+    }
+  }
+
+  & li {
+    @include mobile {
+      display: inline-block;
+    }
+  }
+
+  & a {
+    @include mobile {
+      padding: 20px 0;
+    }
+  }
+
+  & li a {
+    display: block;
+    padding: 10px 15px;
+    margin: 10px 0;
+
+    @include mobile {
+      background: none;
+    }
+  }
+
+  @include desktop {
+    float: right;
+    margin-top: 10px;
+  }
+
+}
