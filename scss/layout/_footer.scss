@@ -3,8 +3,8 @@ footer {
 }
 
 .footer-name {
-  color: #3b3b3b;
-  font-size: 0.8em;
+  color: $color-footer-name;
+  font-size: $footname-size;
   float: left;
   font-weight: 500;
 }
@@ -35,12 +35,12 @@ footer {
   }
   & li a {
     @include mobile {
-      font-size: 0.7em;
+      font-size: $footlink-mobile-size;
     }
   }
   & a:hover {
     @include mobile {
-      color: #bdbdbd;
+      color: $color-nav-hover;
       transition: 0.5s;
     }
   }
@@ -48,11 +48,11 @@ footer {
 
 .footer-name, .footer-nav {
   @include mobile {
-    font-size: 1em;
+    font-size: $footNameNav-mobile-size;
   }
 
   @include desktop {
-    font-size: 1.2em;
+    font-size: $footNameNav-size;
   }
 }
 

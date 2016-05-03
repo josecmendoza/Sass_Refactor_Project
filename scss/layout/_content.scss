@@ -8,7 +8,7 @@
   margin: 40px 0;
   & p {
     @include mobile {
-      font-size: 1.4em;
+      font-size: $welcome-mobile-size;
       text-align: left;
     }
   }
@@ -22,7 +22,7 @@
     width: 200px;
     display: block;
     float: right;
-    background: red;
+    background: $color-profile-mobile;
   }
 }
 
@@ -30,7 +30,7 @@
   font-size: $font-intro-mobile;
 
   @include desktop {
-    font-size: 1.8em;
+    font-size: $intro-desktop-size;
   }
 }
 
@@ -93,7 +93,7 @@
   & li {
     display: block;
     margin: 30px 0;
-    font-size: 0.97em;
+    font-size: $intro-li-font-size;
   }
   a {
     color: $color-contact-link;
@@ -123,7 +123,7 @@
     padding: 20px 0;
 
     @include mobile {
-      font-size: 1.1em;
+      font-size: $contactp-mobile-size;
     }
   }
 }
